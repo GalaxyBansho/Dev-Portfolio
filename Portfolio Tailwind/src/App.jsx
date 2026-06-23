@@ -21,14 +21,14 @@ function App() {
       <div className="w-full max-w-8xl mx-auto h-full">
         
        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 auto-rows-[230px] ">   
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 auto-rows-auto  lg:auto-rows-[230px] ">   
           
          {/* Grid Layout */} 
          {/* Top Row */}
         <div className="lg:col-span-3 lg:row-span-1 rounded-xl bg-white shadow-lg shadow-green-950/20 border-[#BACDB0] border-3"> 
         <h1 className="text-4xl pt-5 pl-5">Judah Davis</h1> 
         <span className="text-2xl pt-5 pl-10">UX Strategist and Web Developer</span>  
-        <div className='flex justify-center items-center gap-5  mt-10'> 
+        <div className='flex justify-center items-center gap-5  lg:mt-10 pb-8 pt-4'> 
           <img src={html} alt="" className="w-[50px] h-[50px]"/> 
           <img src={css}alt="" className=' w-[50px] h-[50px] '/> 
           <img src={javascript} alt="" className='w-[50px] h-[50px] '/> 
@@ -38,45 +38,53 @@ function App() {
         </div> 
        
        {/* Offer Statement */}
-        <div className="lg:col-span-4 lg:row-span-1 rounded-xl bg-[#BACDB0] shadow-lg shadow-green-950/20 flex items-center justify-center
+        <div className="lg:col-span-4 lg:row-span-1 rounded-xl bg-[#BACDB0] shadow-lg shadow-green-950/20 flex items-center justify-center pt-5
         ">  
-        <div className='h-50 w-160 '><span className='text-white text-2xl pt-5 pl-5'>-Local Web Design & Strategy </span> 
+        <div className='h-50 w-160 '><span className='text-white text-2xl lg:pt-5 pl-5'>-Local Web Design & Strategy </span> 
         <h1 className='pl-5 text-3xl text-white text-bold mt-5'>I build custom digital storefronts that turn web traffic into measurable revenue.  </h1>  
-        <p className='text-white pl-5 mt-5 italic'>As a Web Strategist & Developer, I help local businesses  automate their operations and outshine their competition!</p>
+        <p className='text-white pl-5 mt-5 italic hidden md:block'>As a Web Strategist & Developer, I help local businesses  automate their operations and outshine their competition!</p>
         </div>
          </div> 
 
-        <div className="lg:col-span-5 lg:row-span-1 rounded-xl bg-[#BACDB0] shadow-lg shadow-green-950/20 flex flex-col"> 
-        <div className=' h-20 w-full flex'>   
-          <div className='flex flex-col pl-5 '>  
-             
+
+              
 {/* 
              Second Row */} 
              {/* Case Study */}
+        <div className="lg:col-span-5 lg:row-span-1 rounded-xl bg-[#BACDB0] shadow-lg shadow-green-950/20 flex flex-col ">  
+        
+        <div className=' h-20 w-full flex '>    
+          
+          <div className='flex flex-col pl-5 '>  
+             
+
           <span className='text-white text-xl'>Recent Projects</span>
-          <h1 className='text-4xl text-white'>DeeDee's Delights</h1> 
+          <h1 className='text-4xl text-white'>DeeDee's Delights 
+            </h1>  
+            
 
           </div>
-        <div className='flex flex-col pl-5 h-full w-150 ml-20 mt-2 text-white text-[14px] text-left '> 
-           <p> Deedee’s Delights is an e-commerce bakery based out of North Carolina that specializes in nostalgic home baked goods and distributes directly to local customers daily!</p>  </div>
+      <span className='text-xs lg:flex text-white mt-3 lg:ml-40  hidden md:block' >Link to the full case study here:  <a href="https://deedeedelights.vercel.app/" className='underline'> Deedee Delights Case Study </a> </span>
        
           </div> 
-        <div className='h-full w-full flex gap-2'> 
-          <div className=' h-40 w-60 flex justify-center items-center pt-2'> 
-            <div  className='border-black border h-35 w-30 rounded-xl'> 
-              <a href="https://deedeedelights.vercel.app/"> <img src={mockup} alt="" className='object-cover rounded-xl h-full w-full'/></a>
-            </div>
-          </div>
-          <div className='  h-50 w-90 '> 
-            <h1 className='text-white text-2xl pt-3'>Problem</h1> 
-            <p className='text-white'>As a new business, they had already being doing work without an online storefront. Their sales process was not automated or optimized </p>
-          </div>
-          <div className=' h-50 w-100 '> 
-              <h1 className='text-white text-2xl pt-3 pl-2'>Solution</h1> 
-          <p className='text-white pl-2'>Connected a payment processor by integrating Paypal API, and creating  a contact form for queries, submissions and custom orders.</p>
-          <span className='text-xs flex text-white mt-3 ml-5' >Link to the full case study here:  <a href="https://deedeedelights.vercel.app/" className='underline'> Deedee Delights Case Study </a> </span>
-          </div> 
+        <div className='h-full lg:h-40 w-full flex flex-row   lg:pb-7 gap-2'>  
           
+          <div className=' lg:h-40 lg:w-60 h-50 w-60 flex  justify-center items-center pt-2 pl-5'> 
+            <div  className='border-black border-2 lg:h-35 lg:25 h-50 w-30 rounded-xl mr-5 mt-5 lg:mt-0'> 
+              <a href="https://deedeedelights.vercel.app/" > <img src={mockup} alt="" className='object-cover rounded-xl h-full w-full '/></a>
+            </div>
+          </div> 
+          <div className=' lg:flex'>
+          <div className=' h-30 w-70 lg:h-50 lg:w-90 '> 
+            <h1 className='text-white text-2xl pt-3 '>Problem</h1> 
+            <p className='text-white text-sm lg:text-xl  '>As a new business, they had already being doing work without an online storefront. Their sales process was not automated or optimized </p>
+          </div>
+          <div className='h-30 w-70 lg:h-40 lg:w-90 '> 
+              <h1 className='text-white text-2xl pt-3 pl-2'>Solution</h1> 
+          <p className='text-white pl-2 text-sm lg:text-xl '>Connected a payment processor by integrating Paypal API, and creating  a contact form for queries, submissions and custom orders.</p>
+        
+          </div> 
+          </div>
         </div>
         </div>
  
@@ -89,14 +97,14 @@ function App() {
 
  {/* This is where you working last */}
   {/* Last Row */}
-        <div className="lg:col-span-3 lg:row-span-1 rounded-xl bg-white shadow-lg shadow-green-950/20"> 
+        <div className="lg:col-span-3 lg:row-span-1 rounded-xl bg-white shadow-lg shadow-green-950/20 lg:pt-0 pt-5"> 
  
 
         <div className='flex justify-between px-3 h-20'> <h1 className='text-2xl h-15'>How it Works</h1> <h1 className='text-2xl h-15 text-[#729B79]'>It's Too Easy!</h1></div> 
 
-        <div className='flex gap-5 justify-center items-end h-35'>  
-          <div className='flex flex-col items-center'> 
-               <span className=' w-full text-[14px] mb-1 text-[#729B79]'>Submit To The Contact Form</span>
+        <div className='lg:flex lg:gap-5 gap-20 h-auto lg:justify-center lg:items-end lg:h-35 flex flex-col lg:flex-row lg:pb-0 pb-10 '>  
+          <div className='flex flex-col items-center border-black'> 
+               <span className=' w-full text-[14px] mb-1 text-[#729B79] text-center'>Submit To The Contact Form</span>
           <div className='border-3 border-[#729B79] h-40 w-45 rounded-2xl px-2 py-1  flex flex-col items-center'> 
             <p className='text-[12px] text-center '>Fill out the form with a general idea of your business and what services you would like to request</p> 
             <img className='h-20 w-full pt-3 pb-2 ' src={notepad} alt="" /></div> 
@@ -126,9 +134,9 @@ function App() {
 
         </div> 
 
-        <div className="lg:col-span-2 lg:row-span-1 rounded-xl bg-[#BACDB0] shadow-lg shadow-green-950/20"> 
+        <div className="lg:col-span-2 lg:row-span-1 rounded-xl bg-[#BACDB0] shadow-lg shadow-green-950/20 "> 
         <h1 className ='pl-5 text-3xl text-white font-bold mt-5' >Testimonials</h1> 
-        <p className='text-white pl-5 mt-5 italic text-xl'> “We were very impressed with the quality of work, it definitely exceeded our expectations.”</p> 
+        <p className='text-white pl-5 mt-5 italic text-xl h-30 lg:h-auto lg:w-90 lg:text-center'> “We were very impressed with the quality of work, it definitely exceeded our expectations.”</p> 
         </div> 
 
         
