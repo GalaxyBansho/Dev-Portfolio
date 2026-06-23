@@ -27,7 +27,7 @@ function App() {
          {/* Top Row */}
         <div className="lg:col-span-3 lg:row-span-1 rounded-xl bg-white shadow-lg shadow-green-950/20 border-[#BACDB0] border-3"> 
         <h1 className="text-4xl pt-5 pl-5">Judah Davis</h1> 
-        <span className="text-2xl pt-5 pl-10">UX Strategist and Web Developer</span>  
+        <span className="text-2xl pt-5 pl-5">UX Strategist and Web Developer</span>  
         <div className='flex justify-center items-center gap-5  lg:mt-10 pb-8 pt-4'> 
           <img src={html} alt="" className="w-[50px] h-[50px]"/> 
           <img src={css}alt="" className=' w-[50px] h-[50px] '/> 
@@ -77,11 +77,11 @@ function App() {
           <div className=' lg:flex'>
           <div className=' h-30 w-70 lg:h-50 lg:w-90 '> 
             <h1 className='text-white text-2xl pt-3 '>Problem</h1> 
-            <p className='text-white text-sm lg:text-xl  '>As a new business, they had already being doing work without an online storefront. Their sales process was not automated or optimized </p>
+            <p className='text-white text-sm lg:text-xl lg:w-auto w-60  '>As a new business, they had already being doing work without an online storefront. Their sales process was not automated or optimized </p>
           </div>
-          <div className='h-30 w-70 lg:h-40 lg:w-90 '> 
+          <div className='h-30 w-70 lg:h-40 lg:w-90  '> 
               <h1 className='text-white text-2xl pt-3 pl-2'>Solution</h1> 
-          <p className='text-white pl-2 text-sm lg:text-xl '>Connected a payment processor by integrating Paypal API, and creating  a contact form for queries, submissions and custom orders.</p>
+          <p className='text-white pl-2 text-sm lg:text-xl lg:w-auto w-60 '>Connected a payment processor by integrating Paypal API, and creating  a contact form for queries, submissions and custom orders.</p>
         
           </div> 
           </div>
