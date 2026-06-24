@@ -9,7 +9,7 @@
 //         <input type="text" placeholder='Name' className='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5  placholder:text-gray-500 '/>
 //         <input type="text" placeholder='Email' className='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5 
 //         placholder:text-gray-500 '/>  
-//         <input type="number" placeholder='Phone' className ='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5  placholder:text-gray-500 '/> 
+//         <input type="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder='Phone' className ='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5  placholder:text-gray-500 '/> 
 //         <textarea name="" id="" placeholder='Message...' className='h-40 w-80 border-black border-3 rounded-xl text-2xl pl-5 placholder:text-gray-500'></textarea> 
 //         <button className='border-black border-3 h-14 w-40 rounded-xl mb-5 bg-[#729B79] text-white text-2xl flex justify-center items-center cursor-pointer'>Submit</button>
 //         </div>
@@ -53,7 +53,7 @@ function Form() {
     <form 
       ref={formRef}
       onSubmit={sendEmail}
-      className='w-80 h-110 flex justify-start gap-3 flex-col items-center'
+      className='w-full max-w-sm h-110 flex justify-start gap-3  px-5 flex-col items-center'
     >
       <h1 className='text-3xl'>Send Me A Message</h1> 
       
@@ -63,7 +63,7 @@ function Form() {
         name="user_name"
         placeholder='Name' 
         required
-        className='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5 placeholder:text-gray-500'
+        className='border-3 border-black text-black h-12 w-full rounded-xl text-2xl pl-5 placeholder:text-gray-500'
       />
       
       <input 
@@ -71,22 +71,21 @@ function Form() {
         name="user_email"
         placeholder='Email' 
         required
-        className='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5 placeholder:text-gray-500'
+        className='border-3 border-black text-black h-12 w-full rounded-xl text-2xl pl-5 placeholder:text-gray-500'
       />  
       
       <input 
         type="tel" 
         name="user_phone"
-        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
         placeholder='Phone (123-456-7890)' 
-        className='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5 placeholder:text-gray-500'
+        className='border-3 border-black text-black h-12 w-full rounded-xl text-2xl pl-5 placeholder:text-gray-500'
       /> 
       
       <textarea 
         name="message" 
         placeholder='Message...' 
         required
-        className='h-40 w-80 border-black border-3 rounded-xl text-2xl pl-5 placeholder:text-gray-500'
+        className='h-40 w-full border-black border-3 rounded-xl text-2xl pl-5 placeholder:text-gray-500'
       ></textarea> 
       
       {/* 5. Set type="submit" so the browser triggers the onSubmit function */}
