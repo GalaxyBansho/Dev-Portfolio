@@ -9,7 +9,7 @@
 //         <input type="text" placeholder='Name' className='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5  placholder:text-gray-500 '/>
 //         <input type="text" placeholder='Email' className='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5 
 //         placholder:text-gray-500 '/>  
-//         <input type="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder='Phone' className ='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5  placholder:text-gray-500 '/> 
+//         <input type="" placeholder='Phone' className ='border-3 border-black text-black h-12 w-80 rounded-xl text-2xl pl-5  placholder:text-gray-500 '/> 
 //         <textarea name="" id="" placeholder='Message...' className='h-40 w-80 border-black border-3 rounded-xl text-2xl pl-5 placholder:text-gray-500'></textarea> 
 //         <button className='border-black border-3 h-14 w-40 rounded-xl mb-5 bg-[#729B79] text-white text-2xl flex justify-center items-center cursor-pointer'>Submit</button>
 //         </div>
