@@ -77,11 +77,11 @@ function App() {
           <div className=' lg:flex'>
           <div className=' h-30 w-70 lg:h-50 lg:w-90 '> 
             <h1 className='text-white text-2xl pt-3 '>Problem</h1> 
-            <p className='text-white text-sm lg:text-xl lg:w-auto w-60  '>As a new business, they had already being doing work without an online storefront. Their sales process was not automated or optimized </p>
+            <p className='text-white text-[12px] lg:text-xl lg:w-auto w-50  '>As a new business, they had already being doing work without an online storefront. Their sales process was not automated or optimized </p>
           </div>
           <div className='h-30 w-70 lg:h-40 lg:w-90  '> 
               <h1 className='text-white text-2xl pt-3 pl-2'>Solution</h1> 
-          <p className='text-white pl-2 text-sm lg:text-xl lg:w-auto w-60 '>Connected a payment processor by integrating Paypal API, and creating  a contact form for queries, submissions and custom orders.</p>
+          <p className='text-white pl-2 text-[12px]  lg:text-xl lg:w-auto w-50 '>Connected a payment processor through Paypal API, and creating  a contact form for queries, submissions and custom orders.</p>
         
           </div> 
           </div>
@@ -135,8 +135,8 @@ function App() {
         </div> 
 
         <div className="lg:col-span-2 lg:row-span-1 rounded-xl bg-[#BACDB0] shadow-lg shadow-green-950/20 "> 
-        <h1 className ='pl-5 text-3xl text-white font-bold mt-5' >Testimonials</h1> 
-        <p className='text-white pl-5 mt-5 italic text-xl h-30 lg:h-auto lg:w-90 lg:text-center'> “We were very impressed with the quality of work, it definitely exceeded our expectations.”</p> 
+        <h1 className =' text-3xl text-center text-white font-bold mt-5' >Testimonials</h1> 
+        <p className='text-white pl-5 mt-5 italic text-xl h-30 lg:h-auto lg:w-90 text-center w-90'> “We were very impressed with the quality of work, it definitely exceeded our expectations.”</p> 
         </div> 
 
         
