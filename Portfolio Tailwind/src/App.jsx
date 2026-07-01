@@ -15,10 +15,10 @@ function App() {
 
   return (
     // 1. Changed h-screen to min-h-screen so the page can scroll naturally if content overflows
-    <div className="min-h-screen w-full bg-[#729B79] p-2 md:p-12 lg:p-8 flex items-start justify-center"> 
+    <div className="min-h-screen w-full bg-[#729B79] p-2 md:p-12 lg:p-8 flex items-center justify-center"> 
       
  
-      <div className="w-full max-w-8xl mx-auto min-h-screen">
+      <div className="w-full max-w-8xl mx-auto h-full">
         
        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 auto-rows-auto  lg:auto-rows-[230px] ">   
