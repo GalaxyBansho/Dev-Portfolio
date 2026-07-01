@@ -18,7 +18,7 @@ function App() {
     <div className="min-h-screen w-full bg-[#729B79] p-2 md:p-12 lg:p-8 flex items-start justify-center"> 
       
  
-      <div className="w-full max-w-8xl mx-auto h-full">
+      <div className="w-full max-w-8xl mx-auto min-h-screen">
         
        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 auto-rows-auto  lg:auto-rows-[230px] ">   
