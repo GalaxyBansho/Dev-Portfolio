@@ -21,7 +21,7 @@ function App() {
       <div className="w-full max-w-8xl mx-auto lg:h-[calc(100vh-4rem)]l">
         
        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 lg:grid-rows-3 auto-rows-auto  lg:auto-rows-[230px] ">   
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 lg:grid-rows-3 auto-rows-auto   ">   
           
          {/* Grid Layout */} 
          {/* Top Row */}
